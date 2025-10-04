@@ -1,0 +1,86 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Kansas DOGE"
+email: community@dogenetwork.org
+description: Kansas State DOGE Network site for government transparency and efficiency.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dogenetwork.org/" # the base hostname & protocol for your site
+twitter_username: cali-doge # replace with your state's twitter username
+github_username: sarob # replace with your github username
+
+# Site logos
+logo_doge: "/doge-network.png"
+logo_state: "/Flag_of_Kansas.svg"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Navigation
+navigation:
+  - title: Savings
+    url: /savings/
+  - title: Payments
+    url: /payments/
+  - title: Spend
+    url: /spend/
+  - title: Regulations
+    url: /regulations/
+  - title: Workforce
+    url: /workforce/
+  - title: About
+    url: /about/
+
+# Footer links
+footer_links:
+  - title: About
+    url: https://dogenetwork.org/about
+  - title: Documentation
+    url: https://dogenetwork.org/docs
+  - title: Meetings
+    url: https://dogenetwork.org/meetings
+  - title: Schedule
+    url: https://dogenetwork.org/schedule
+  - title: Calendar
+    url: https://dogenetwork.org/calendar
+  - title: GitHub
+    url: https://github.com/doge-network
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
