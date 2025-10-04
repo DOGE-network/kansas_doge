@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    {% if site.footer_links %}
+      <nav class="footer-nav">
+        {% for link in site.footer_links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+          {% unless forloop.last %} • {% endunless %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </div>
+</footer>
+
+<style>
+.footer-nav {
+  text-align: left;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-nav a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.footer-nav a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+</style>
