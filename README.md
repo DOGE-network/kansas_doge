@@ -1,5 +1,51 @@
 # Kansas DOGE
 
+[![Version](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/doge-network/kansas-doge)
+[![Template](https://img.shields.io/badge/Template-DOGE%20Network%20Ruby-brightgreen.svg)](https://dogenetwork.org/)
+[![Jekyll](https://img.shields.io/badge/Jekyll-4.3.4-blue.svg)](https://jekyllrb.com/)
+[![Ruby](https://img.shields.io/badge/Ruby-3.3.0-red.svg)](https://www.ruby-lang.org/)
+[![Minima Theme](https://img.shields.io/badge/Theme-Minima-green.svg)](https://github.com/jekyll/minima)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.md)
+
+## Quick Start
+
+Get your Kansas DOGE site up and running in minutes:
+
+### Prerequisites
+- Ruby 3.3.0+
+- Git
+- Cursor Editor (or any text editor)
+
+### Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd kansas_doge
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   gem install bundler jekyll
+   bundle install --path vendor/bundle
+   ```
+
+3. **Start the development server:**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. **View your site:**
+   Open [http://localhost:4000](http://localhost:4000) in your browser
+
+### Next Steps
+- Edit `index.md` to customize your homepage
+- Add new pages in the root directory
+- Update `_config.yml` for site configuration
+- See the detailed guide below for complete setup instructions
+
+---
+
 ## Maintaining Your Site After It's Built
 
 Once your Kansas DOGE site is up and running, here's how to keep it updated and maintained:

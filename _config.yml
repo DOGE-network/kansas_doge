@@ -19,6 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Kansas DOGE"
+version: "0.1.0"
+template: "DOGE Network Ruby"
 email: community@dogenetwork.org
 description: Kansas State DOGE Network site for government transparency and efficiency.
 baseurl: "" # the subpath of your site, e.g. /blog
