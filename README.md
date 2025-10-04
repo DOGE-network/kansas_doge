@@ -1,39 +1,90 @@
 # Kansas DOGE
 
-Here's how to get your State DOGE site up and running, super easy!
+## Maintaining Your Site After It's Built
 
-## Overview
+Once your Kansas DOGE site is up and running, here's how to keep it updated and maintained:
+
+### Overview of Key Files
+
+Your site consists of three main components
+
+#### 1. `index.md` - Your Homepage
+This is your main landing page where visitors first arrive. It contains:
+- **Layout**: Uses `layout: default` to display the standard site structure
+- **Navigation Links**: Found in the header, quick access to all your pages
+- **DOGE Network Resources**: Links to DOGE Network documentation, research guides, and calendar
+- **Content Sections**: Organized by the headers. Supports YouTube and X embedding. 
+
+To update your homepage:
+- Edit the markdown content directly in `index.md`
+- Add or remove links in the various sections
+- Update descriptions and information as needed
+- The file uses simple markdown formatting - just use `##` for headings and `-` for bullet points
+
+#### 2. Individual Pages (`savings.md`, `regulations.md`, etc.)
+Each topic has its own dedicated page file:
+- **File Structure**: Each page is a separate `.md` file in your root directory
+- **Front Matter**: Each page starts with YAML configuration (title, description, permalink, layout)
+- **Content**: Markdown-formatted content with headings, bullet points, and links
+- **Navigation**: Automatically appears in your site's navigation menu
+
+To maintain your pages:
+- Open any `.md` file (like `savings.md`) in your editor
+- Update the content, add new information, or modify existing text
+- Add new links to reliable sources
+- Keep information current and relevant to Kansas government
+
+#### 3. `_config.yml` - Site Configuration
+This file controls your entire site's behavior and appearance:
+- **Site Information**: Title, email, description, URLs
+- **Theme Settings**: Controls the visual appearance
+- **Navigation Menu**: Defines which pages appear in your site's navigation
+- **Footer Links**: Links that appear at the bottom of every page
+- **Logo References**: Points to your DOGE and state logos
+
+To update site configuration:
+- Modify site title, email, or description
+- Add or remove navigation items
+- Update footer links
+- Change logo file references
+
+### As Needed
+- Add new pages by creating new `.md` files
+- Update navigation in `_config.yml` when adding pages
+- Modify styling by editing CSS files in the `assets/` folder
+
+## Building the Site From Scratch
+
+Here's how to get your State DOGE site up and running from the beginning:
+
+### Overview
 
 This guide helps beginners turn a hand-drawn layout into a real website with minimal coding, using Jekyll Minimal Mistakes and Vercel.
 
-## 0. Get your site created in the DOGE Network
+### 1. Get Your Site Created in the DOGE Network
 
 - Email `community@dogenetwork.org` to let them know what state you are creating for
 - You will get an email back with instructions and details
 
-## 1. Get Your Tools
+### 2. Get Your Tools
 
-### Ruby
-
+#### Ruby
 - **Windows:** Go to [rubyinstaller.org](https://rubyinstaller.org), download the latest, and click "Next" on everything.
 - **macOS:** Open Terminal and type `brew install ruby` (install Homebrew if you don't have it).
 - **Linux (Ubuntu/Debian):** Open Terminal and type `sudo apt update` then `sudo apt install ruby-full`.
 
-### Git
-
+#### Git
 - Go to [git-scm.com](https://git-scm.com), download for your OS, and keep clicking "Next" to install.
 
-### Cursor Editor
+#### Cursor Editor
+- Visit [cursor.so](cursor.so), download, and follow the installation steps.
 
-- Visit [cursor.so](https://cursor.so), download, and follow the installation steps.
+#### Github Desktop
+- Visit [desktop.github.com](desktop.github.com), download, install
 
-### Github Desktop
+### 3. Create Your Website
 
-- Visit [desktop.github.com](https://desktop.github.com), download, install
-
-## 2. Create Your Website
-
-1. Open Github Desktop, and clone your state DOGE site using the instructions from step 0
+1. Open Github Desktop, and clone your state DOGE site using the instructions from step 1
 2. Open Cursor and open the cloned state DOGE directory as a project
 3. Create a terminal session and run these commands:
 
@@ -58,9 +109,9 @@ bundle exec jekyll new . --force
 
 **Important Notes:**
 - If you get permission errors on macOS, use `bundle install --path vendor/bundle` instead of just `bundle install`
-- After running `jekyll new`, you need to update the `_config.yml` file to use the correct theme (see step 6 below)
+- After running `jekyll new`, you need to update the `_config.yml` file to use the correct theme (see step 4 below)
 
-## 3. Put Your Layout Into the Homepage
+### 4. Put Your Layout Into the Homepage
 
 Start the webserver locally with:
 
@@ -104,7 +155,7 @@ layout: default
 - [Local Link 1](https://sample.org/link)
 ```
 
-## 4. Configure Your Site
+### 5. Configure Your Site
 
 After running `jekyll new`, you need to update the `_config.yml` file:
 
@@ -128,15 +179,15 @@ navigation:
     url: /regulations/
 ```
 
-## 5. Creating Pages
+### 6. Creating Pages
 
-### 5.1. Planning: What Goes on Each Page?
+#### 6.1. Planning: What Goes on Each Page?
 
 Each page (like "Savings") should focus on one topic.
 
 Examples: "Savings" for grants and updates, "Payments/Spend" for contracts, "Regulations" for rules, "Workforce" for hiring data, "About" for your site's mission. See [cali-doge.org](https://cali-doge.org) pages as examples.
 
-### 5.2. Create a New Page File in Your Site
+#### 6.2. Create a New Page File in Your Site
 
 In your Jekyll folder (where `index.md` is), create new files like `savings.md`, `payments.md`, etc.
 
@@ -162,7 +213,7 @@ Make similar files for `payments.md`, `spend.md`, `regulations.md`, `workforce.m
 
 Copy, paste, and update the info! Use links to reliable sources.
 
-### 5.3. Link Pages Together
+#### 6.3. Link Pages Together
 
 In your `_config.yml` file, add pages like this for navigation:
 
@@ -182,7 +233,7 @@ navigation:
     url: /about/
 ```
 
-## 6. Add Your Logos and Custom Styling
+### 7. Add Your Logos and Custom Styling
 
 1. Save your DOGE and state logos in the root directory (same level as `index.md`).
 2. Create a custom header to display logos in the site header:
@@ -246,7 +297,7 @@ Create `_includes/header.html`:
 }
 ```
 
-## 7. Preview the Site Locally
+### 8. Preview the Site Locally
 
 In your terminal, type:
 
@@ -256,7 +307,6 @@ bundle exec jekyll serve
 
 Then open `http://localhost:4000` in your browser to see your site!
 
-## 8. Publish with Vercel
+### 9. Publish with Vercel
 
 Email `community@dogenetwork.org` to let them know you're ready to publish, and they'll set it up so your site updates automatically when you make changes.
-
