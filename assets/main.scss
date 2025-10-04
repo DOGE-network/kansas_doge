@@ -38,9 +38,13 @@
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: 1px;
+  /* Prevent card from breaking - keep header with content */
   break-inside: avoid;
+  break-after: avoid;
   page-break-inside: avoid;
+  page-break-after: avoid;
   -webkit-column-break-inside: avoid;
+  -webkit-column-break-after: avoid;
 }
 
 .page-content h2 + ul {
@@ -52,9 +56,13 @@
   margin: 0 0 20px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   list-style: none;
+  /* Prevent card from breaking - keep content with header */
   break-inside: avoid;
+  break-before: avoid;
   page-break-inside: avoid;
+  page-break-before: avoid;
   -webkit-column-break-inside: avoid;
+  -webkit-column-break-before: avoid;
 }
 
 .page-content h2 + ul li {
@@ -90,6 +98,10 @@
   height: 0;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
+  /* Prevent embed from being cut off across columns */
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 .youtube-embed iframe {
@@ -111,6 +123,10 @@
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   max-width: 100%;
+  /* Prevent embed from being cut off across columns */
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 .twitter-embed blockquote {
