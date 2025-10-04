@@ -4,8 +4,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign page_paths = site.pages | map: "path" -%}
     <div style="display: flex; align-items: center;">
       <a href="https://dogenetwork.org/" target="_blank" rel="noopener noreferrer">
         <img src="/doge-network.png" alt="DOGE Network Logo" width="50" height="50" style="margin-right: 15px;">

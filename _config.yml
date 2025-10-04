@@ -35,21 +35,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Navigation
-navigation:
-  - title: Savings
-    url: /savings/
-  - title: Payments
-    url: /payments/
-  - title: Spend
-    url: /spend/
-  - title: Regulations
-    url: /regulations/
-  - title: Workforce
-    url: /workforce/
-  - title: About
-    url: /about/
-
 # Footer links
 footer_links:
   - title: About
