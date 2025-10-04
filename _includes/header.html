@@ -4,11 +4,14 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign page_paths = site.pages | map: "path" -%}
     <div style="display: flex; align-items: center;">
-      <img src="/doge-network.png" alt="DOGE Network Logo" width="50" height="50" style="margin-right: 15px;">
-      <img src="/Flag_of_Kansas.svg" alt="Kansas Flag" width="75" height="45" style="margin-right: 15px;">
+      <a href="https://dogenetwork.org/" target="_blank" rel="noopener noreferrer">
+        <img src="/doge-network.png" alt="DOGE Network Logo" width="50" height="50" style="margin-right: 15px;">
+      </a>
+      <a href="https://kansas.dogenetwork.org/" target="_blank" rel="noopener noreferrer">
+        <img src="/Flag_of_Kansas.svg" alt="Kansas Flag" width="75" height="45" style="margin-right: 15px;">
+      </a>
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </div>
 
@@ -35,3 +38,13 @@
     {%- endif -%}
   </div>
 </header>
+
+<style>
+.site-title {
+  text-decoration: none;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+</style>
