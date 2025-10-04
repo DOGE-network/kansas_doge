@@ -3,8 +3,8 @@
 
 @import "minima";
 
-/* Responsive layout using CSS columns */
-.page-content {
+/* Responsive multi-column layout */
+.page-content .wrapper {
   column-count: 1;
   column-gap: 20px;
   max-width: 1200px;
@@ -12,20 +12,21 @@
   padding: 0 20px;
 }
 
-/* Wide screens: 2-3 columns */
+/* Tablet: 2 columns */
 @media (min-width: 600px) {
-  .page-content {
+  .page-content .wrapper {
     column-count: 2;
   }
 }
 
+/* Desktop: 3 columns */
 @media (min-width: 900px) {
-  .page-content {
+  .page-content .wrapper {
     column-count: 3;
   }
 }
 
-/* Card styling - keep headers and content together */
+/* Card styling - header and list stay together as one card */
 .page-content h2 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -38,13 +39,12 @@
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  /* Prevent card from breaking - keep header with content */
   break-inside: avoid;
   break-after: avoid;
-  page-break-inside: avoid;
-  page-break-after: avoid;
-  -webkit-column-break-inside: avoid;
-  -webkit-column-break-after: avoid;
+}
+
+.page-content h2:first-child {
+  margin-top: 0;
 }
 
 .page-content h2 + ul {
@@ -56,13 +56,8 @@
   margin: 0 0 20px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   list-style: none;
-  /* Prevent card from breaking - keep content with header */
   break-inside: avoid;
   break-before: avoid;
-  page-break-inside: avoid;
-  page-break-before: avoid;
-  -webkit-column-break-inside: avoid;
-  -webkit-column-break-before: avoid;
 }
 
 .page-content h2 + ul li {
@@ -85,51 +80,47 @@
   color: #667eea;
 }
 
-/* Responsive video styling */
+/* YouTube embed - stays in one column, no breaking */
 .youtube-embed {
-  margin: 20px 0;
   background-color: #ffffff;
   border: 1px solid #e1e5e9;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  overflow: hidden;
-  /* Prevent embed from being cut off across columns */
+  margin: 0 0 20px 0;
   break-inside: avoid;
-  page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: calc(56.25% + 40px); /* 16:9 aspect ratio + padding */
+  overflow: hidden;
 }
 
 .youtube-embed iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   border: none;
   border-radius: 8px;
 }
 
-/* Twitter/X embed styling */
-.twitter-embed {
-  margin: 20px 0;
+/* Twitter/X embed - stays in one column, no breaking */
+.tweet-embed {
   background-color: #ffffff;
   border: 1px solid #e1e5e9;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  max-width: 100%;
-  /* Prevent embed from being cut off across columns */
+  margin: 0 0 20px 0;
   break-inside: avoid;
-  page-break-inside: avoid;
-  -webkit-column-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
 }
 
-.twitter-embed blockquote {
+.tweet-embed blockquote {
   margin: 0;
   padding: 0;
   border: none;

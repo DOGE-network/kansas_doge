@@ -126,15 +126,6 @@ Open `index.md` in Cursor Editor. Copy, paste, and edit this (it's super simple!
 layout: default
 ---
 
-## Pages
-
-- [Savings](/savings)
-- [Payments](/payments)
-- [Spend](/spend)
-- [Regulations](/regulations)
-- [Workforce](/workforce)
-- [About](/about)
-
 ## Network
 
 - [How to join DOGE Network](https://dogenetwork.org/join-doge-network)
@@ -149,10 +140,6 @@ layout: default
 ## State
 
 - [State Link 1](https://sample.org/link)
-
-## Local
-
-- [Local Link 1](https://sample.org/link)
 ```
 
 ### 5. Configure Your Site
@@ -259,41 +246,57 @@ Create `_includes/header.html`:
 
 @import "minima";
 
-/* Responsive layout using CSS columns */
+/* Responsive layout using CSS Grid - prevents content from breaking across columns */
 .page-content {
-  column-count: 1;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Wide screens: 2-3 columns */
+/* Medium screens: 2 columns */
 @media (min-width: 600px) {
   .page-content {
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .page-content > * {
+    grid-column: span 1;
   }
 }
 
+/* Wide screens: 3 columns */
 @media (min-width: 900px) {
   .page-content {
-    column-count: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Card styling - keep headers and content together */
+/* Card styling - headers and content stay together automatically */
 .page-content h2 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border-radius: 12px 12px 0 0;
   padding: 15px 20px;
-  margin: 20px 0 0 0;
+  margin: 0;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
   font-weight: 600;
   font-size: 1.3em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  break-inside: avoid;
+}
+
+.page-content h2 + ul {
+  background-color: #ffffff;
+  border: 1px solid #e1e5e9;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 15px 20px;
+  margin: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  list-style: none;
 }
 ```
 
