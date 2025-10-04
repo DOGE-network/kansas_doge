@@ -8,6 +8,8 @@ layout: default
 - [How to research](https://dogenetwork.org/docs/howto/how-to-doge-your-state)
 - [How to use data](https://dogenetwork.org/docs/howto/vibe-coding-for-beginners)
 
+{% include tweet.html tweet_id="1974211497619562819" %}
+
 ## National
 
 - [Data Republican](https://datarepublican.com/browse/)
@@ -20,5 +22,3 @@ layout: default
 <div class="youtube-embed">
   <iframe src="https://www.youtube.com/embed/swRXZmdzauM" allowfullscreen></iframe>
 </div>
-
-{% include tweet.html tweet_id="1974211497619562819" %}
