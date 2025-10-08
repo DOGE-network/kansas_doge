@@ -20,7 +20,3 @@ layout: default
 ## State
 
 - [FRED All Employees: Government in Kansas](https://fred.stlouisfed.org/series/KSGOVT)
-
-<div class="youtube-embed">
-  <iframe src="https://www.youtube.com/embed/swRXZmdzauM" allowfullscreen></iframe>
-</div>
