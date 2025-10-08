@@ -9,6 +9,8 @@ layout: default
 - [How to use data](https://dogenetwork.org/docs/howto/vibe-coding-for-beginners)
 
 {% include tweet.html tweet_id="1974211497619562819" %}
+{% include tweet.html tweet_id="1970299559126671623" %}
+{% include tweet.html tweet_id="1975667391968243825" %}
 
 ## National
 
