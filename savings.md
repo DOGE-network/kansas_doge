@@ -1,7 +1,5 @@
 ---
 title: Savings
-description: Latest updates and efficiency efforts in Kansas government.
-permalink: /savings/
 layout: page
 ---
 

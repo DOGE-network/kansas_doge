@@ -18,19 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Kansas DOGE"
-version: "0.1.0"
-template: "DOGE Network Ruby"
-email: community@dogenetwork.org
-description: Kansas State DOGE Network site for government transparency and efficiency.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dogenetwork.org/" # the base hostname & protocol for your site
-twitter_username: cali-doge # replace with your state's twitter username
-github_username: sarob # replace with your github username
+# Template Variables (users replace these)
+state_name: "Kansas"  # e.g., "Kansas"
+state_abbrev: "KS"  # e.g., "KS"
+state_url_subdomain: "kansas"  # e.g., "kansas"
 
-# Site logos
+# Derived Configuration (auto-generated from variables)
+title: "Kansas DOGE"
+description: "Kansas State DOGE Network site for government transparency and efficiency."
+url: "https://kansas.dogenetwork.org/"
+
+version: "0.3.1"
+template: "DOGE Network Ruby"
+template_repo: "https://github.com/DOGE-network/DOGE_Network_Ruby_Template"
+email: community@dogenetwork.org
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: BrcliftonBrian # replace with your state's twitter username
+github_username: BrcliftonBrian # replace with your github username
 logo_doge: "/doge-network.png"
-logo_state: "/Flag_of_Kansas.svg"
+logo_state: "/state-flag.svg" # replace with your state's flag
 
 # Build settings
 theme: minima

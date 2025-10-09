@@ -1,7 +1,5 @@
 ---
 title: Regulations
-description: Kansas and national regulatory news.
-permalink: /regulations/
 layout: page
 ---
 
