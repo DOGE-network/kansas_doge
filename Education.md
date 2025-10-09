@@ -1,5 +1,6 @@
 ---
-layout: default
+title: Education
+layout: page
 ---
 
 ## Special Needs Spending

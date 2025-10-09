@@ -31,7 +31,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
-
 # Node modules (if using any Node.js tools)
 node_modules/
 
@@ -45,3 +44,4 @@ node_modules/
 # Backup files
 *.bak
 *.backup
+
