@@ -21,10 +21,6 @@ Use this syntax for formatting:
 - [How to research](https://dogenetwork.org/docs/howto/how-to-doge-your-state)
 - [How to use data](https://dogenetwork.org/docs/howto/vibe-coding-for-beginners)
 
-{% include tweet.html tweet_id="1974211497619562819" %}
-{% include tweet.html tweet_id="1970299559126671623" %}
-{% include tweet.html tweet_id="1975667391968243825" %}
-
 ## National
 
 - [Data Republican](https://datarepublican.com/browse/)
@@ -33,3 +29,12 @@ Use this syntax for formatting:
 ## State
 
 - [FRED All Employees: Government in Kansas](https://fred.stlouisfed.org/series/KSGOVT)
+
+## About
+
+- Brian Clifton investigates government inefficiencies, spotlighting wasteful contracts and foreign influences in agencies like USAID and the State Department through detailed threads and data-driven exposés. An avid outdoorsman and passionate aviator, he draws from diverse past roles in mortgage banking, rail engineering, and carpentry to inform his writings on policy and reform. His engagements reveal a network of collaborators in the DOGE community, emphasizing transparency and accountability in public spending.
+{% include tweet.html tweet_id="1935895794189480446" %}
+{% include tweet.html tweet_id="1965080498406916363" %}
+{% include tweet.html tweet_id="1935093632178033078" %}
+{% include tweet.html tweet_id="1935872414681907528" %}
+{% include tweet.html tweet_id="1932893068421746918" %}
